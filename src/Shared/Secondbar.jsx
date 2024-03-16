@@ -4,7 +4,8 @@ import Modal from "../Components/Modal";
 
 const Secondbar = () => {
   const [openModalId, setIsModalId] = useState(null);
-  const [isShow, setIsShow] = useState(false);
+  const [isMouseLeave, setIsMouseLeave] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   //   const openModal = () => {
   //     setIsModalOpen(true);
@@ -19,59 +20,107 @@ const Secondbar = () => {
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item1");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="Study abroad" id="item1"></NavItem>
+              <NavItem
+                name="Study abroad"
+                id="item1"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
 
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item2");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="What we do?" id="item2"></NavItem>
+              <NavItem
+                name="What we do?"
+                id="item2"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item3");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="Destinations" id="item3"></NavItem>
+              <NavItem
+                name="Destinations"
+                id="item3"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item4");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="Find a course" id="item4"></NavItem>
+              <NavItem
+                name="Find a course"
+                id="item4"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item5");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="Student Essential Services" id="item5"></NavItem>
+              <NavItem
+                name="Student Essential Services"
+                id="item5"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
             <div
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
+                setIsHovered(true);
                 setIsModalId("item6");
               }}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              <NavItem name="IELTS" id="item6"></NavItem>
+              <NavItem
+                name="IELTS"
+                id="item6"
+                isHovered={isHovered}
+                openModalId={openModalId}
+              ></NavItem>
             </div>
           </div>
         </div>
       </div>
 
       <div
-        className="w-[80%] md:w-[50%] mx-auto bg-[#F3F3F3] p-5"
-        onMouseLeave={() => setIsModalId(null)}
+        className={`w-[80%] mx-auto bg-[#F3F3F3] p-5 ${
+          !isHovered ? "hidden" : ""
+        }`}
+        onMouseEnter={() => {
+          setIsHovered(true);
+          //setIsModalId("item6");
+        }}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <Modal id={openModalId}></Modal>
       </div>
