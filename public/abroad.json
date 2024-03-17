@@ -1,0 +1,27 @@
+{
+    "name":"Study in abroad",
+    "data":[
+        {
+          "title": "Study UI in SG",
+          "image": "https://i.ibb.co/KwgPQGw/Rectangle-8882.png",
+          "location": "London, UK",
+          "duration": "Semester or Year",
+          "programType": "Arts and Humanities"
+        },
+        {
+          "title": "Study UX In SG",
+          "image": "https://i.ibb.co/2tHmDKb/Rectangle-8883.png",
+          "location": "Edinburgh, UK",
+          "duration": "Semester or Year",
+          "programType": "History and Literature"
+        },
+        {
+          "title": "Study Nothing",
+          "image": "https://i.ibb.co/y4Ts7s1/Rectangle-8884.png",
+          "location": "Oxford, UK",
+          "duration": "Semester or Year",
+          "programType": "STEM Fields"
+        }
+    ]
+
+}

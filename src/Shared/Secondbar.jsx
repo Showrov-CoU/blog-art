@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavItem from "../Components/NavItem";
 import Modal from "../Components/Modal";
 
 const Secondbar = () => {
   const [openModalId, setIsModalId] = useState(null);
-  const [isMouseLeave, setIsMouseLeave] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
+  const [data, setData] = useState([]);
 
-  //   const openModal = () => {
-  //     setIsModalOpen(true);
-  //   };
-  //console.log(isModalOpen, openModalId);
+  const fetchData = async (option) => {
+    try {
+      const res = await fetch(`http://localhost:5000/${option}`);
+      const result = await res.json();
+      setData(result);
+      //   console.log(result);
+    } catch (error) {
+      console.log("Error fetching data", error);
+    }
+  };
+
+  useEffect(() => {
+    if (openModalId) {
+      fetchData(openModalId);
+    }
+  }, [openModalId]);
 
   return (
     <>
@@ -21,13 +33,16 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item1");
+                setIsModalId("abroad");
               }}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseLeave={() => {
+                setIsHovered(false);
+                //setData([]);
+              }}
             >
               <NavItem
                 name="Study abroad"
-                id="item1"
+                id="abroad"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -37,13 +52,13 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item2");
+                setIsModalId("whatwedo");
               }}
               onMouseLeave={() => setIsHovered(false)}
             >
               <NavItem
                 name="What we do?"
-                id="item2"
+                id="whatwedo"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -52,13 +67,13 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item3");
+                setIsModalId("destination");
               }}
               onMouseLeave={() => setIsHovered(false)}
             >
               <NavItem
                 name="Destinations"
-                id="item3"
+                id="destination"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -67,13 +82,15 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item4");
+                setIsModalId("course");
               }}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseLeave={() => {
+                setIsHovered(false);
+              }}
             >
               <NavItem
                 name="Find a course"
-                id="item4"
+                id="course"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -82,13 +99,13 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item5");
+                setIsModalId("service");
               }}
               onMouseLeave={() => setIsHovered(false)}
             >
               <NavItem
                 name="Student Essential Services"
-                id="item5"
+                id="service"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -97,13 +114,13 @@ const Secondbar = () => {
               className="h-full w-full md:w-fit"
               onMouseEnter={() => {
                 setIsHovered(true);
-                setIsModalId("item6");
+                setIsModalId("ielts");
               }}
               onMouseLeave={() => setIsHovered(false)}
             >
               <NavItem
                 name="IELTS"
-                id="item6"
+                id="ielts"
                 isHovered={isHovered}
                 openModalId={openModalId}
               ></NavItem>
@@ -113,17 +130,17 @@ const Secondbar = () => {
       </div>
 
       <div
-        className={`w-[80%] mx-auto bg-[#F3F3F3] p-5 ${
+        className={`absolute z-20 left-1/2 transform -translate-x-1/2 w-[80%] mx-auto bg-[#F3F3F3] p-5 rounded-xl ${
           !isHovered ? "hidden" : ""
         }`}
         onMouseEnter={() => {
           setIsHovered(true);
-          //setIsModalId("item6");
         }}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Modal id={openModalId}></Modal>
+        <Modal id={openModalId} data={data}></Modal>
       </div>
+      {/* <p>hello</p> */}
     </>
   );
 };
