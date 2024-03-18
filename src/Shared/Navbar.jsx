@@ -2,10 +2,32 @@ import logo from "../assets/logo.png";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { BiUser } from "react-icons/bi";
-
-// let color = "#FF3D00";
+import { FaAngleDown } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+// import { FaAngleUp } from "react-icons/fa";
+// import { getAuth } from "firebase/auth";
+import { useContext } from "react";
+import { AuthContext } from "./../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, googleSignIn, facebookSignIn, logOut } =
+    useContext(AuthContext);
+
+  const handleGoogleLogIn = () => {
+    googleSignIn().then((result) => console.log(result));
+  };
+
+  const handleFacebookLogin = () => {
+    facebookSignIn().then((result) => console.log(result));
+  };
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .catch((err) => console.log(err.message));
+  };
+
   return (
     <div className="navbar bg-[#D9D9D9] py-7 md:px-16">
       <div className="flex-1">
@@ -25,12 +47,68 @@ const Navbar = () => {
             <CiLocationOn className="text-xl"></CiLocationOn>
             <a>Find us</a>
           </li>
-          <button className="btn btn-outline">
-            <span className="text-xl">
-              <BiUser></BiUser>
-            </span>{" "}
-            Sign up
-          </button>
+
+          <li>
+            {user ? (
+              <button onClick={handleLogout} className="btn btn-outline">
+                <span className="text-xl">
+                  <div>
+                    <img
+                      className="size-8 rounded-full"
+                      src={user?.photoURL}
+                      alt=""
+                    />
+                  </div>
+                </span>{" "}
+                Sign Out
+              </button>
+            ) : (
+              <div className="bg-[#D9D9D9] dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-outline m-1 flex justify-between items-center"
+                >
+                  <span className="text-xl">
+                    <BiUser></BiUser>
+                  </span>
+                  <span className="text-sm">Sign In</span>
+                  <span>
+                    <FaAngleDown></FaAngleDown>
+                  </span>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-72 space-y-2 bg-[#D9D9D9]"
+                >
+                  <li>
+                    <button
+                      onClick={handleGoogleLogIn}
+                      className="btn btn-outline"
+                    >
+                      <span className="text-xl">
+                        <FaGoogle></FaGoogle>
+                      </span>{" "}
+                      Sign in with google
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleFacebookLogin}
+                      className="btn btn-outline"
+                    >
+                      <span className="text-xl">
+                        <FaFacebook></FaFacebook>
+                      </span>{" "}
+                      Sign in with Facebook
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {user ? <div>{user?.displayName.split(" ")[0]}</div> : undefined}
+          </li>
         </ul>
       </div>
     </div>
