@@ -1,20 +1,21 @@
 
-[      {
-        "color":"#FF3D00",
-        "name": "3 Essential Design Trends, February 2024",
-        "shortDesc": "From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.",
-        "author": "By Carrie Cousins",
-        "date": "March 12, 2024",
+[
+    {
+        "color":"#3346FF",
+        "name": "The Future of Responsive Web Design",
+        "shortDesc": "As technology continues to evolve, responsive web design is becoming more important than ever.As technology continues to evolve, responsive web design is becoming more important than ever.As technology continues to evolve, responsive web design is becoming more important than ever.As technology continues to evolve, responsive web design is becoming more important than ever.As technology continues to evolve, responsive web design is becoming more important than ever.",
+        "author": "By Sarah Brown",
+        "date": "June 15, 2024",
         "img1": "https://i.ibb.co/VMshqSV/image-1.png",
-        "img2": "https://i.ibb.co/m6JBMpT/image-2.png",
-        "chapterName": "Atypical Typefaces",
-        "chapterText": "Forget all the same old sans serifs! Designers are making bold choices with atypical typefaces that you don’t often see in website projects. What’s lovely about this trend is that it pays a sort of homage to print design, where interesting type styles are more of the norm.\n\nThere’s no set rule for choosing a different typeface, it’s just ensuring that it works with the rest of your design and is readable on screens of all sizes.\n\nIn this design trend, we are seeing all kinds of variations from handwriting styles to simple flair with what might otherwise be a standard sans serif. In order to make it work well, these typefaces are used for display purposes and almost always paired with a simple font for the main body copy. This helps ensure readability and comprehension for users.</br>Parga uses a Greek-inspired typeface for its restaurant website design. The display is bold and interesting and helps support images that lack a ton of depth.Spring into a new website design aesthetic with some of the hottest trends of the season. Some of the things we are seeing right now are unexpected twists and takes combined with classic design styles that result in interesting and unique site designs.\nHere’s what’s trending in design this month:",
-        "conclusion": "Spring into a new website design aesthetic with some of the hottest trends of the season. Some of the things we are seeing right now are unexpected twists and takes combined with classic design styles that result in interesting and unique site designs.\n\nHere’s what’s trending in design this month:"
+        "img2": "https://i.ibb.co/vdM9nb4/Mask-group.png",
+        "chapterName": "Adapting to New Devices",
+        "chapterText": "Responsive web design ensures that websites adapt to different devices and screen sizes, providing users with a consistent and optimized experience across desktops, laptops, tablets, and smartphones.\n\nWith the proliferation of new devices and form factors, responsive design has become essential for reaching and engaging audiences effectively. Designers must consider factors such as screen size, resolution, input methods, and connection speeds when designing responsive websites.\n\nIn addition to adapting to different devices, responsive design also involves optimizing performance and usability. Designers must prioritize fast load times, intuitive navigation, and accessible content to ensure a seamless user experience.\n\nAs technology continues to advance, responsive web design will remain a critical aspect of modern web development, enabling websites to reach and connect with users on any device, anywhere, anytime.",
+        "conclusion": "The future of responsive web design lies in its ability to adapt to new technologies and user behaviors. By staying flexible and responsive to change, designers can create websites that are future-proof and capable of meeting the evolving needs and expectations of users."
       },
       {
         "color":"#F9FF33",
         "name": "The Rise of Minimalist Design in Web Development",
-        "shortDesc": "Minimalism is not just a design trend but a philosophy that is changing the way websites are created and perceived.",
+        "shortDesc": "Minimalism is not just a design trend but a philosophy that is changing the way websites are created and perceived.Minimalism is not just a design trend but a philosophy that is changing the way websites are created and perceived.Minimalism is not just a design trend but a philosophy that is changing the way websites are created and perceived.Minimalism is not just a design trend but a philosophy that is changing the way websites are created and perceived.",
         "author": "By John Smith",
         "date": "April 5, 2024",
         "img1": "https://i.ibb.co/vdM9nb4/Mask-group.png",
@@ -26,7 +27,7 @@
       {
         "color":"#33FFB5",
         "name": "The Power of Visual Storytelling in UX Design",
-        "shortDesc": "Visual storytelling is a powerful technique that can engage users, evoke emotions, and communicate complex ideas effectively.",
+        "shortDesc": "Visual storytelling is a powerful technique that can engage users, evoke emotions, and communicate complex ideas effectively.Visual storytelling is a powerful technique that can engage users, evoke emotions, and communicate complex ideas effectively.Visual storytelling is a powerful technique that can engage users, evoke emotions, and communicate complex ideas effectively.Visual storytelling is a powerful technique that can engage users, evoke emotions, and communicate complex ideas effectively.",
         "author": "By Emily Johnson",
         "date": "May 20, 2024",
         "img1": "https://i.ibb.co/1rxY0fX/Mask-group-2.png",
@@ -36,24 +37,25 @@
         "conclusion": "Visual storytelling is a valuable tool in UX design, enabling designers to create meaningful and memorable experiences for users. By harnessing the power of visuals, designers can captivate audiences, communicate ideas effectively, and enhance the overall user experience."
       },
       {
-        "color":"#3346FF",
-        "name": "The Future of Responsive Web Design",
-        "shortDesc": "As technology continues to evolve, responsive web design is becoming more important than ever.",
-        "author": "By Sarah Brown",
-        "date": "June 15, 2024",
+        "color":"#FF3D00",
+        "name": "3 Essential Design Trends, February 2024",
+        "shortDesc": "From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.\n\nSpring into a new website design aesthetic with some of the hottest trends of the season. Some of the things we are seeing right now are unexpected twists and takes combined with classic design styles that result in interesting and unique site designs.\n\nHere’s what’s trending in design this month:",
+        "author": "By Carrie Cousins",
+        "date": "March 12, 2024",
         "img1": "https://i.ibb.co/VMshqSV/image-1.png",
-        "img2": "https://i.ibb.co/vdM9nb4/Mask-group.png",
-        "chapterName": "Adapting to New Devices",
-        "chapterText": "Responsive web design ensures that websites adapt to different devices and screen sizes, providing users with a consistent and optimized experience across desktops, laptops, tablets, and smartphones.\n\nWith the proliferation of new devices and form factors, responsive design has become essential for reaching and engaging audiences effectively. Designers must consider factors such as screen size, resolution, input methods, and connection speeds when designing responsive websites.\n\nIn addition to adapting to different devices, responsive design also involves optimizing performance and usability. Designers must prioritize fast load times, intuitive navigation, and accessible content to ensure a seamless user experience.\n\nAs technology continues to advance, responsive web design will remain a critical aspect of modern web development, enabling websites to reach and connect with users on any device, anywhere, anytime.",
-        "conclusion": "The future of responsive web design lies in its ability to adapt to new technologies and user behaviors. By staying flexible and responsive to change, designers can create websites that are future-proof and capable of meeting the evolving needs and expectations of users."
+        "img2": "https://i.ibb.co/m6JBMpT/image-2.png",
+        "chapterName": "Atypical Typefaces",
+        "chapterText": "Forget all the same old sans serifs! Designers are making bold choices with atypical typefaces that you don’t often see in website projects. What’s lovely about this trend is that it pays a sort of homage to print design, where interesting type styles are more of the norm.\n\nThere’s no set rule for choosing a different typeface, it’s just ensuring that it works with the rest of your design and is readable on screens of all sizes.\n\nIn this design trend, we are seeing all kinds of variations from handwriting styles to simple flair with what might otherwise be a standard sans serif. In order to make it work well, these typefaces are used for display purposes and almost always paired with a simple font for the main body copy. This helps ensure readability and comprehension for users.</br>Parga uses a Greek-inspired typeface for its restaurant website design. The display is bold and interesting and helps support images that lack a ton of depth.Spring into a new website design aesthetic with some of the hottest trends of the season. Some of the things we are seeing right now are unexpected twists and takes combined with classic design styles that result in interesting and unique site designs.\nHere’s what’s trending in design this month:",
+        "conclusion": "Spring into a new website design aesthetic with some of the hottest trends of the season. Some of the things we are seeing right now are unexpected twists and takes combined with classic design styles that result in interesting and unique site designs.\n\nHere’s what’s trending in design this month:"
       },
+
       {
         "color":"#FF33D7 ",
         "name": "Exploring the Impact of Color Psychology in Design",
-        "shortDesc": "Color psychology plays a significant role in shaping user perceptions, emotions, and behaviors in design.",
+        "shortDesc": "Color psychology plays a significant role in shaping user perceptions, emotions, and behaviors in design.Color psychology plays a significant role in shaping user perceptions, emotions, and behaviors in design.Color psychology plays a significant role in shaping user perceptions, emotions, and behaviors in design.Color psychology plays a significant role in shaping user perceptions, emotions, and behaviors in design.",
         "author": "By Michael Smith",
         "date": "July 10, 2024",
-        "img1": "https://i.ibb.co/m6JBMpT/image-2",
+        "img1": "https://i.ibb.co/vQDyjhG/Mask-group-3.png",
         "img2": "https://i.ibb.co/7gLDS14/Mask-group-1.png",
         "chapterName": "Adapting to New Devices",
         "chapterText": "Responsive web design ensures that websites adapt to different devices and screen sizes, providing users with a consistent and optimized experience across desktops, laptops, tablets, and smartphones.\n\nWith the proliferation of new devices and form factors, responsive design has become essential for reaching and engaging audiences effectively. Designers must consider factors such as screen size, resolution, input methods, and connection speeds when designing responsive websites.\n\nIn addition to adapting to different devices, responsive design also involves optimizing performance and usability. Designers must prioritize fast load times, intuitive navigation, and accessible content to ensure a seamless user experience.\n\nAs technology continues to advance, responsive web design will remain a critical aspect of modern web development, enabling websites to reach and connect with users on any device, anywhere, anytime.",
@@ -62,7 +64,7 @@
       {
         "color":"#FF3352",
         "name": "3 Essential Design Trends, February 2024",
-        "shortDesc": "From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.",
+        "shortDesc": "From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.From atypical typefaces to neutral colors to unusual user patterns, there are plenty of new website design trends to try this month.",
         "author": "By Carrie Cousins",
         "date": "March 12, 2024",
         "img1": "https://i.ibb.co/VMshqSV/image-1.png",

@@ -5,11 +5,20 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout.jsx";
+import BlogDetails from "./Components/BlogDetails.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    children: [
+      {
+        path: "/:id",
+        element: <BlogDetails></BlogDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/blog/${params.id}`),
+      },
+    ],
   },
 ]);
 

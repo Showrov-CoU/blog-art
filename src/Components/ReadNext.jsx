@@ -28,6 +28,8 @@ const ReadNext = () => {
     }
   };
 
+  
+
   return (
     <div className="mx-40">
       <p className="font-bold text-2xl py-5 px-5">Read Next</p>

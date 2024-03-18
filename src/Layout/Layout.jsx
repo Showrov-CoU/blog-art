@@ -11,12 +11,16 @@ const Layout = () => {
     <div className="leading-relaxed tracking-wider">
       <Navbar></Navbar>
       <Secondbar></Secondbar>
-      <div className="min-h-screen">
-        <div className="min-h-screen flex justify-center">
-          <Outlet></Outlet>
-          <DetailsForm></DetailsForm>
+      <div className="min-h-screen pt-16">
+        <div className="md:mx-32 min-h-screen flex justify-between">
+          <div className="w-[45%]">
+            <Outlet></Outlet>
+          </div>
+          <div className="w-[30%] border-2">
+            <DetailsForm></DetailsForm>
+          </div>
         </div>
-        <div>
+        <div className="pt-5">
           <ReadNext></ReadNext>
         </div>
       </div>
