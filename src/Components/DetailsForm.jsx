@@ -27,7 +27,7 @@ const DetailsForm = () => {
 
   return (
     <div className="">
-      <div className="p-3 space-y-1 bg-[#1C66D7] text-white">
+      <div className="px-3 py-6 md:p-3 space-y-1 bg-[#1C66D7] text-white">
         <h1 className="text-lg font-bold">Interested in studying UX?</h1>
         <p className="text-sm">
           SG can help – fill in your details and we’ll call you back.

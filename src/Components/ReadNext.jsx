@@ -12,7 +12,9 @@ const ReadNext = () => {
   const pages = [...Array(totalPage).keys()];
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blog?page=${currentPage}&size=${itemPerPage}`)
+    fetch(
+      `https://blog-art-server.vercel.app/blog?page=${currentPage}&size=${itemPerPage}`
+    )
       .then((res) => res.json())
       .then((result) => setBlogs(result));
   }, [currentPage]);
@@ -28,12 +30,10 @@ const ReadNext = () => {
     }
   };
 
-  
-
   return (
-    <div className="mx-40">
+    <div className="mx-1 md:mx-40">
       <p className="font-bold text-2xl py-5 px-5">Read Next</p>
-      <div className="flex justify-start items-center gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-start items-center gap-1 md:gap-5">
         {blogs.map((item) => (
           <Blog key={item._id} item={item}></Blog>
         ))}

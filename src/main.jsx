@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         path: "/:id",
         element: <BlogDetails></BlogDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/blog/${params.id}`),
+          fetch(`https://blog-art-server.vercel.app/blog/${params.id}`),
       },
     ],
   },

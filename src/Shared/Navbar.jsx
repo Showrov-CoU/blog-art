@@ -29,16 +29,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-[#D9D9D9] py-7 md:px-16">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:navbar bg-[#D9D9D9] py-7 md:px-16">
       <div className="flex-1">
-        <img
-          className="w-[155px] h-[22px] md:w-[188px] md:h-[32px]"
-          src={logo}
-          alt=""
-        />
+        <img className="" src={logo} alt="" />
       </div>
       <div className="flex-none">
-        <ul className="flex justify-center items-center px-1 gap-1 md:gap-10 text-black md:font-medium">
+        <ul className="flex justify-center items-center px-1 gap-5 md:gap-10 text-black md:font-medium">
           <li className="flex justify-center items-center md:gap-2">
             <MdOutlineEventAvailable></MdOutlineEventAvailable>
             <a>Events</a>
@@ -48,7 +44,7 @@ const Navbar = () => {
             <a>Find us</a>
           </li>
 
-          <li>
+          <li className="flex flex-col justify-center items-center">
             {user ? (
               <button onClick={handleLogout} className="btn btn-outline">
                 <span className="text-xl">
@@ -79,7 +75,7 @@ const Navbar = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-72 space-y-2 bg-[#D9D9D9]"
+                  className="dropdown-content z-[1] menu p-2 shadow  rounded-box w-72 space-y-2 bg-[#D9D9D9]"
                 >
                   <li>
                     <button
@@ -107,7 +103,11 @@ const Navbar = () => {
               </div>
             )}
 
-            {user ? <div>{user?.displayName.split(" ")[0]}</div> : undefined}
+            {user ? (
+              <div className="pt-1 text-sm text-lime-700">
+                {user?.displayName}
+              </div>
+            ) : undefined}
           </li>
         </ul>
       </div>

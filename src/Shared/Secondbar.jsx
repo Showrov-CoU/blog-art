@@ -9,7 +9,14 @@ const Secondbar = () => {
 
   const fetchData = async (option) => {
     try {
-      const res = await fetch(`http://localhost:5000/${option}`);
+      if (option === "destination") {
+        option = "abroad";
+      } else if (option === "ielts") {
+        option = "course";
+      } else if (option === "service") {
+        option = "whatwedo";
+      }
+      const res = await fetch(`https://blog-art-server.vercel.app/${option}`);
       const result = await res.json();
       setData(result);
       //   console.log(result);

@@ -4,7 +4,7 @@ const Modal = ({ id, data }) => {
   return (
     <div>
       <p className="pb-10 ps-10 text-2xl font-bold">{data[0]?.name}</p>
-      <div className="flex justify-center items-center gap-3 ">
+      <div className="grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-3 ">
         {data[0]?.data?.map((item) => (
           <div key={item.title} className="card bg-[#F3F3F3]">
             <figure>
