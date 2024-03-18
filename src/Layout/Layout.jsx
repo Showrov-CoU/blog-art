@@ -5,6 +5,7 @@ import Secondbar from "../Shared/Secondbar";
 import SecondFooter from "../Shared/SecondFooter";
 import DetailsForm from "../Components/DetailsForm";
 import ReadNext from "../Components/ReadNext";
+import { Toaster } from "react-hot-toast";
 
 const Layout = () => {
   return (
@@ -16,7 +17,7 @@ const Layout = () => {
           <div className="w-[45%]">
             <Outlet></Outlet>
           </div>
-          <div className="w-[30%] border-2">
+          <div className="w-[30%] h-fit rounded-xl overflow-hidden">
             <DetailsForm></DetailsForm>
           </div>
         </div>
@@ -27,6 +28,7 @@ const Layout = () => {
 
       <Footer></Footer>
       <SecondFooter></SecondFooter>
+      <Toaster></Toaster>
     </div>
   );
 };
